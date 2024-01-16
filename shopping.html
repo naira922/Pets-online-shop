@@ -1,0 +1,147 @@
+<?php 
+  session_start();
+  // check if (login key exists in session and Key = true)
+  if(!isset($_SESSION['login'])){
+    header('Location: ./Form.php');
+    die;
+  }
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETS Online Shop</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styleShopping.css">
+    <link rel="stylesheet" href="headerFooter.css">
+    <!-- fontawsom -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="">
+  <header id="home" class="header">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="" >
+      <h1>PETS</h1>
+    </div>
+    <nav>
+        <a href="index.php#home">Home</a>
+        <a href="index.php#category">categort</a>
+        <a href="shopping.php" class="active">Shopping</a>
+        <a href="index.php#gallery">gallery</a>
+        <a href="index.php#contact">contact us</a>
+        <a href="logout.php">logout</a>
+    </nav>
+</header>
+
+    <div>
+      <label id="dark-change"></label>
+  </div>
+    <!--old-->
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+              <!--
+                <img src="image/shopping.svg">
+              -->
+              <i class="fa-solid fa-bag-shopping fa-2x"></i>
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        <!--new-->
+        <div>
+          <h1 class="headh1">PETS</h1>
+        </div>
+        <!--endnew-->
+            
+      
+    
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <!--old end-->
+
+    <!--food-->
+    <div class="btn-arrs">
+      <h3 class="btn-h">FOR FOOD AND ACCESSORIES PLEASE PRESS HERE</h3>
+      <a href="food.php">
+      <button class="btn-arr"><i class="fa-solid fa-arrow-right fa-2x"></i></button>
+      </a>
+    </div>
+     
+
+    <!-- footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="box">
+        <h3> <img src="images/logo.jpg" alt="" style="border-radius: 50%; width: 100px;"></h3>
+        <ul class="social">
+          <li>
+            <a href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur
+        </p>
+      </div>
+      <div class="box">
+        <ul class="links">
+          <li><a href="#">Important Link 1</a></li>
+          <li><a href="#">Important Link 2</a></li>
+          <li><a href="#">Important Link 3</a></li>
+          <li><a href="#">Important Link 4</a></li>
+          <li><a href="#">Important Link 5</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
+        </div>
+        <div class="line">
+          <i class="far fa-clock fa-fw"></i>
+          <div class="info">Business Hours: From 10:00 To 18:00</div>
+        </div>
+        <div class="line">
+          <i class="fas fa-phone-volume fa-fw"></i>
+          <div class="info">
+            <span>+20123456789</span>
+            <span>+20198765432</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">Made With  Frontend team</p>
+  </div>
+
+
+    <script src="js/shopping.js"></script>
+</body>
+</html>

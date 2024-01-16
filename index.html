@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- main style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="headerFooter.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Normalization -->
+  <link rel="stylesheet" href="css/normalize.css">
+  
+  <title>PETS Online Shop</title>
+  <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+  <style>
+        .sureMsg{
+          padding: 15px 20px;
+          background-color: #3585ec52;
+          color: black;
+          border: 1px solid gainsboro;
+          border-radius: 20px;
+          font-weight: bold;
+          margin: 40px auto;
+          width: 40%;
+          text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+  <header id="home" class="header">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="" >
+      <h1>PETS</h1>
+    </div>
+    <nav>
+        <a href="#home"  class="active">Home</a>
+        <a href="#category">categort</a>
+        <a href="shopping.php">Shopping</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact">contact us</a>
+        <a href="logout.php">logout</a>
+    </nav>
+</header>
+
+  <!-- main page -->
+  <section class="page1">
+    <div class="main-container">
+      <div class="wrapper">
+      </div>
+      <div class="main-text">
+        <h1>Pet shop</h1>
+        <p>Welcome to our online pet haven, where tails wag and purrs thrive! Discover a world of joy for your furry friends with our curated selection of pet essentials and delightful treats. Your pets deserve the best, and we're here to make every tail-wagging moment extraordinary</p>
+        <a href="#rate" class="go-down">
+          <i class="fa-solid fa-angles-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- sider -->
+  <section id="category" class="slider">
+    <div class="slider-container">
+      <div id="slide-number" class="slide-number"></div>
+      <img decoding="async" src="image/group cat.jpg" alt="" />
+      <img decoding="async" src="images/group-dogs.webp" alt="" />
+      <img decoding="async" src="images/birds.jpg" alt="" />
+    </div>
+    <div class="slider-controls">
+      <span id="prev" class="prev">Previous</span>
+      <span id="indicators" class="indicators"></span>
+      <span id="next" class="next">Next</span>
+    </div>
+  </section>
+
+  <div class="gallery" id="gallery">
+    <h2 class="main-title">Gallery</h2>
+    <div class="btn">
+      <button id="all" onclick="ALL()">All</button>
+      <button id="dog" onclick="DOG()">Dogs</button>
+      <button id="cat" onclick="cat()">Cats</button>
+      <button id="brid" onclick="brid()">Birds</button>
+
+    </div>
+    <div class="main-container">
+      <div id="dog1" class="box dog">
+        <div class="image">
+          <img src="image/golden6.jpeg" alt="" >
+        </div>
+      </div>
+      <div id="dog2" class="box dog">
+        <div class="image">
+          <img src="image/eskimo1.jpg" alt="" >
+        </div>
+      </div>
+      <div id="dog3" class="box dog">
+        <div class="image">
+          <img src="image/german1.webp" alt="" >
+        </div>
+      </div>
+      <div id="cat1" class="box cat">
+        <div class="image">
+          <img src="image/siamse.jpg" alt="" >
+        </div>
+      </div>
+      <div id="cat2" class="box cat">
+        <div class="image">
+          <img src="image/sphynx.jpg" alt="" >
+        </div>
+      </div>
+      <div id="cat3" class="box cat">
+        <div class="image">
+          <img src="image/birman.jpg" alt="" >
+        </div>
+      </div>
+      <div id="brid1" class="box brid">
+        <div class="image">
+          <img src="image/bird2.jpg" alt="" >
+        </div>
+      </div>
+      <div id="brid2" class="box brid">
+        <div class="image">
+          <img src="image/bird3.jpg" alt="" >
+        </div>
+      </div>
+      <div id="brid3" class="box brid">
+        <div class="image">
+          <img src="image/bluebird.jpg" alt="" >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Skills -->
+  <div id="rate" class="our-skills">
+    <h2 class="main-title">Selling rate</h2>
+    <div class="main-container">
+      <img src="images/2019_4_8_16_40_56_268.jpg" alt="" />
+      <div class="skills">
+        <div class="skill">
+          <h3>pets buyers<span>95%</span></h3>
+          <div class="the-progress">
+            <span style="width: 0" data-width="95%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>food buyers <span>85%</span></h3>
+          <div class="the-progress">
+            <span style="width: 0" data-width="85%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Accessorise buyers <span>75%</span></h3>
+          <div class="the-progress">
+            <span style="width: 0" data-width="75%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Skills -->
+
+  <!-- Start services -->
+  <div class="services" id="services">
+    <h2 class="main-title">Services</h2>
+    <div class="main-container">
+      <div class="box">
+        <i class="fas fa-solid fa-dog fa-4x"></i>
+        <h3>Security</h3>
+        <div class="info">
+          <a href="#">Details</a>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-clinic-medical fa-4x"></i>
+        <h3>Health Services</h3>
+        <div class="info">
+          <a href="#">Details</a>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fas fa-map-marked-alt fa-4x"></i>
+        <h3>Delivery</h3>
+        <div class="info">
+          <a href="#">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services -->
+
+   <!-- start contact section -->
+   <section class="contact" id="contact">
+    <h1 class="main-title">Contact us</h1>
+   
+    <div class="contact-about">
+        <div class="comunication address">
+            <p class="type">Address</p>
+            <p class="about-type">street 221b Baker street, London UK</p>
+        </div>
+
+        <div class="comunication support">
+            <p class="type">Customer Support</p>
+            <p class="about-type">E-mail: contact@site.com<br>Phone: (555)555-555</p>
+        </div>
+        <div class="social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </div>
+
+    <form action="" method="post">
+        <div class="name">
+            <label for="Name">Your Name</label>
+            <br>
+            <input type="text" id="Name" name="yourName" required>
+        </div>
+
+        <div class="email">
+            <label for="email">Your Email</label>
+            <br>
+            <input type="email" id="email" name="Email" required>
+        </div>
+
+        <div class="subject">
+            <label for="sub">Subject</label>
+            <br>
+            <input type="text" id="sub" name="Subject">
+        </div>
+
+        <div class="text">
+            <label for="message">Your Message</label>
+            <br>
+            <input type="text" id="message" name="Message" >
+        </div>
+
+        <div class="ok">
+            <button name="send">Send</button>
+        </div>
+
+    </form>
+</section>
+<!-- end contact section -->
+
+<!-- footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="box">
+        <h3> <img src="images/logo.jpg" alt="" style="border-radius: 50%; width: 100px;"></h3>
+        <ul class="social">
+          <li>
+            <a href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur
+        </p>
+      </div>
+      <div class="box">
+        <ul class="links">
+          <li><a href="#">Important Link 1</a></li>
+          <li><a href="#">Important Link 2</a></li>
+          <li><a href="#">Important Link 3</a></li>
+          <li><a href="#">Important Link 4</a></li>
+          <li><a href="#">Important Link 5</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
+        </div>
+        <div class="line">
+          <i class="far fa-clock fa-fw"></i>
+          <div class="info">Business Hours: From 10:00 To 18:00</div>
+        </div>
+        <div class="line">
+          <i class="fas fa-phone-volume fa-fw"></i>
+          <div class="info">
+            <span>+20123456789</span>
+            <span>+20198765432</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">Made With  Frontend team</p>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
